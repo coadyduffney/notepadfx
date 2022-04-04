@@ -18,7 +18,6 @@ public class NotepadFxAppController {
         AnchorPane.setBottomAnchor(textArea, 0.);
         AnchorPane.setRightAnchor(textArea, 0.);
         AnchorPane.setTopAnchor(textArea, 0.);
-
     }
 
     @FXML

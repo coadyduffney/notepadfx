@@ -1,22 +1,29 @@
+/* MENU BAR COLORS */
+/* #202020; */
+
+/* TEXT AREA BACKGROUND COLOR */
+/* #272727 */
+
 .text-area {
     -fx-background-insets: 0;
-    -fx-background-color: transparent, white, transparent, white;
+    -fx-background-color: transparent, #272727, transparent, #272727;
+    -fx-text-fill: white;
 }
 
 .text-area .content {
-    -fx-background-color: transparent, white, transparent, white;
+    -fx-background-color: transparent, #272727, transparent, #272727;
+    -fx-padding: 10px;
+    -fx-text-fill: white;
+    -fx-highlight-fill: #0082cf;
 }
 
 .text-area:focused .content {
-    -fx-background-color: transparent, white, transparent, white;
+    -fx-background-color: transparent, #272727, transparent, #272727;
+    -fx-padding: 10px;
+    -fx-text-fill: white;
+    -fx-highlight-fill: #0082cf;
 }
 
 .text-area:focused {
-    -fx-highlight-fill: #7ecfff;
-}
-
-.text-area .content {
-    -fx-padding: 10px;
-    -fx-text-fill: gray;
-    -fx-highlight-fill: #7ecfff;
+    -fx-highlight-fill: #0082cf;
 }
