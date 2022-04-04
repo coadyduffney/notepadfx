@@ -4,6 +4,22 @@
 /* TEXT AREA BACKGROUND COLOR */
 /* #272727 */
 
+.menu-bar {
+    -fx-background-color: #2b2b2b;
+}
+
+.menu .label {
+    -fx-text-fill: white;
+}
+
+.menu:hover {
+    -fx-background-color: #3a3a3a;
+}
+
+.context-menu {
+    -fx-background-color: #3a3a3a;
+}
+
 .text-area {
     -fx-background-insets: 0;
     -fx-background-color: transparent, #272727, transparent, #272727;
