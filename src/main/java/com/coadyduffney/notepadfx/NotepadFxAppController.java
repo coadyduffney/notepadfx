@@ -15,7 +15,7 @@ public class NotepadFxAppController {
         AnchorPane.setRightAnchor(textArea, 0.);
         AnchorPane.setTopAnchor(textArea, 0.);
 
-        textArea.setStyle("-fx-focus-color: -fx-control-inner-background ; -fx-faint-focus-color: -fx-control-inner-background ;");
+//        textArea.setStyle("-fx-focus-color: -fx-control-inner-background ; -fx-faint-focus-color: -fx-control-inner-background ;");
 
     }
 }
