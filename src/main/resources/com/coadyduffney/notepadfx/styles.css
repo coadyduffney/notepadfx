@@ -29,6 +29,10 @@
     -fx-text-fill: white;
 }
 
+.check-menu-item {
+    -fx-mark-color: white;
+}
+
 .context-menu {
     -fx-background-color: #3a3a3a;
     -fx-font-size: 14px;

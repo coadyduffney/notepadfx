@@ -1,5 +1,6 @@
 package com.coadyduffney.notepadfx;
 
+import com.tangorabox.componentinspector.fx.FXComponentInspectorHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.CheckMenuItem;
 import javafx.scene.control.TextArea;
