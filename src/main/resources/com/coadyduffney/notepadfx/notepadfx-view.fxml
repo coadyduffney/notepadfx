@@ -35,7 +35,7 @@
           </Menu>
           <Menu mnemonicParsing="false" text="View">
             <items>
-                  <CheckMenuItem mnemonicParsing="false" text="Word Wrap" />
+                  <CheckMenuItem fx:id="wordWrapMenuItem" mnemonicParsing="false" onAction="#setWrapText" text="Word Wrap" />
             </items>
           </Menu>
             <Menu mnemonicParsing="false" text="Help">
