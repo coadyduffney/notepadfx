@@ -11,6 +11,7 @@ import javafx.stage.FileChooser;
 import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.nio.file.Files;
 
 public class NotepadFxAppController {
     @FXML
@@ -33,13 +34,30 @@ public class NotepadFxAppController {
     }
 
     @FXML
+    public void onOpen(ActionEvent event) {
+        FileChooser fileChooser = new FileChooser();
+        fileChooser.setTitle("Open File");
+
+        File openFile = fileChooser.showOpenDialog(NotepadFxApp.WINDOW);
+
+        if (null != openFile) {
+
+            NotepadFxApp.WINDOW.setTitle("NotepadFX - " + openFile.getPath());
+
+            try {
+                String fileContent = Files.readString(openFile.toPath());
+                textArea.setText(fileContent);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+        }
+    }
+
+    @FXML
     public void onSaveAs(ActionEvent event) {
         FileChooser fileChooser = new FileChooser();
         fileChooser.setTitle("Save File");
-
-        fileChooser.getExtensionFilters().addAll(
-                new FileChooser.ExtensionFilter("Text Files (*.txt)", "*.txt"),
-                new FileChooser.ExtensionFilter("All Files (*.*)", "*.*"));
 
         File saveFile = fileChooser.showSaveDialog(NotepadFxApp.WINDOW);
 
