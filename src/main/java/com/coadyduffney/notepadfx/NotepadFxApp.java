@@ -9,6 +9,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class NotepadFxApp extends Application {
+    public static Stage WINDOW;
 
     @Override
     public void start(Stage stage) throws IOException {
@@ -17,6 +18,8 @@ public class NotepadFxApp extends Application {
         stage.setTitle("NotepadFX");
         stage.setScene(scene);
         stage.show();
+
+        WINDOW = stage;
 
         // Enable scene inspector.
         FXComponentInspectorHandler.handleAll();
